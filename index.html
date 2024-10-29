@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+    <title>BookSaw</title>
+  </head>
+
+  <body>
+    <!-- ---------------------------- Header Section ----------------------------- -->
+    <header>
+      <nav class="navbar navbar-expand-lg py-4 py-lg-0">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" class="logo" alt="BookSaw Logo">
+          </a>
+      
+          <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="menu-text">MENU</span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+              <li class="nav-item px-3 mx-lg-3 px-lg-0 py-1 py-lg-4">
+                <a onclick="changeColor(this)" class="nav-link custom-color" href="#">HOME</a>
+              </li>
+              <li class="nav-item px-3 mx-lg-3 px-lg-0 py-1 py-lg-4">
+                <a onclick="changeColor(this)" class="nav-link custom-color" href="#Feature">FEATURED</a>
+              </li>
+              <li class="nav-item px-3 mx-lg-3 px-lg-0 py-1 py-lg-4">
+                <a onclick="changeColor(this)" class="nav-link custom-color" href="#Popular">POPULAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- ---------------------------- Carousel Hero ---------------------------- -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container py-5">
+              <div class="row d-flex align-items-center justify-content-around">
+                <!-- Image - Display on top for small screens -->
+                <div class="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-sm-0">
+                  <img src="./assets/img/main-banner1.jpg" class="img-fluid rounded carousel-bg" alt="Life Of The Wild">
+                </div>
+      
+                <!-- Text Content - Display below the image on small screens -->
+                <div class="col-12 col-lg-6 order-2 order-lg-1 text-center mt-4 mt-lg-0">
+                  <h2 class="display-4 fw-bold">Life Of The Wild</h2>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
+                  <a href="#" class="btn readmore-btn mt-3 fw-bold">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Additional Carousel Items -->
+          <div class="carousel-item">
+            <div class="container d-flex align-items-center justify-content-around py-5">
+              <!-- Image -->
+              <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
+                <img src="./assets/img/main-banner2.jpg" class="img-fluid rounded" alt="Birds gonna be happy">
+              </div>
+      
+              <!-- Text Content -->
+              <div class="col-12 col-lg-6 order-2 order-lg-1 text-center mt-4 mt-lg-0">
+                <h2 class="display-5 fw-bold">Birds gonna be happy</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
+                <a href="#" class="btn readmore-btn mt-3 fw-semibold">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="fa-solid fa-arrow-left-long prev-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="fa-solid fa-arrow-right prev-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- -------------------------- End Carousel Hero -------------------------- -->
+    </header>
+    <!-- ---------------------------- End Header Section ----------------------------- -->
+
+    <!-- ------------------------ Clients Logo Section ------------------------- -->
+    <section class="clients-section">
+      <div class="our-clients d-flex flex-column flex-sm-row justify-content-center align-items-center">
+        <img src="./assets/img/client-image1.png" alt="">
+          <img src="./assets/img/client-image2.png" alt="">
+          <img src="./assets/img/client-image3.png" alt="">
+          <img src="./assets/img/client-image4.png" alt="">
+          <img src="./assets/img/client-image5.png" alt="">
+      </div>
+    </section>
+    <!-- ------------------------ End Clients Logo Section ------------------------- -->
+
+
+    <!-- ----------------------- Featured Books Section ------------------------ -->
+    <section class="featured-books py-5" id="Feature">
+      <div class="container text-center py-5">
+        <p class="text-uppercase">Some Quality Items</p>
+        <h2 class="display-5 fw-bold mb-4 title">Featured Books</h2>
+
+        <!--* Book Items -->
+        <div class="row justify-content-center" id="book-container">
+          <!--?Map on data using JS-->
+        </div>
+        <hr>
+        <div class="view-products-container">
+          <a href="#" class="view-products">View All Products →</a>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------- End Featured Books Section ------------------------ -->
+
+
+    <!-- ------------------------ Best Selling Section ------------------------- -->
+    <section class="best-selling py-5">
+      <div class="container best-seller-section d-flex flex-column flex-md-row justify-content-center align-items-center text-sm-start text-center py-5">
+        <div class="book-cover p-3">
+          <img src="" alt="Book Cover" class="img-fluid" id="best-selling-image">
+        </div>
+        <div class="col-12 col-md-7 col-lg-3 book-details mt-4 mt-md-5 ps-0 ps-md-5">
+          <h2>Best Selling Book</h2>
+          <div class="underline mb-4"> 
+            <!--?Map on data using JS-->
+          </div>
+          <p class="author" id="best-selling-author">
+            <!--?Map on data using JS-->
+          </p>
+          <h5 class="best-selling-title" id="best-selling-title">
+            <!--?Map on data using JS-->
+          </h5>
+          <p class="description" id="best-selling-description">
+            <!--?Map on data using JS-->
+          </p>
+          <div class="shop-btn-container mt-3">
+            <a href="#" class="shop-now">Shop It Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------- End Best Selling Section ----------------------- -->
+
+
+    <!-- ------------------------ Popular Books Section ------------------------ -->
+    <section class="popular-books py-5" id="Popular">
+      <div class="container text-center py-5">
+        <p class="text-uppercase">Some Quality Items</p>
+        <h2 class="display-5 mb-4 title">Popular Books</h2>
+        
+        <div class="d-flex justify-content-center my-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-sm-3">
+                <ul class=" navbar-nav d-flex flex-row flex-wrap justify-content-center">
+                  <li class="nav-item mx-3">
+                    <a onclick="setBorder(this)" class="nav-link category-link fw-bold" href="#">All Genre</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a onclick="setBorder(this)" class="nav-link category-link fw-bold" href="#">Business</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a onclick="setBorder(this)" class="nav-link category-link fw-bold" href="#">Technology</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a onclick="setBorder(this)" class="nav-link category-link fw-bold" href="#">Romantic</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a onclick="setBorder(this)" class="nav-link category-link fw-bold" href="#">Adventure</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a onclick="setBorder(this)" class="nav-link category-link fw-bold" href="#">Fictional</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Book Items -->
+        <div class="row justify-content-center" id="popular-books-container">
+            <!--?Map on data using JS-->
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------- End Popular Books Section ---------------------- -->
+
+    <!-- -------------------------- Subscribe Section -------------------------- -->
+    <section class="subscribe p-5">
+      <div class="container best-seller-section d-flex justify-content-center align-items-center py-5">
+        <div class="col-4 mt-lg-5">
+          <h5 class="display-3 subscribe-title">Subscribe To Our Newsletter</h5>
+          <div class="underline"></div>
+        </div>
+          <div class="col-md-7 col-lg-4 subscribe-details mt-5 ps-lg-5">
+            <p class="author">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae explicabo fugiat vel omnis beatae cupiditate officiis! Earum, sed dolor?</p>
+            <form>
+              <div class="mt-5 pt-5">
+                <label for="exampleInputEmail1" class="form-label">Enter your email address here <button class="ms-4 fw-bold text-dark send-btn">SEND <i class="fa-solid fa-paper-plane"></i></button></label>
+                <input type="email" class=" custom-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="underline-form"></div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </section>   
+    <!-- -------------------------- End Subscribe Section -------------------------- -->
+    
+    <!-- --------------------------- Footer Section ---------------------------- -->
+    <footer class="text-dark py-5">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+
+          <!-- ------------------------ Logo and description ------------------------- -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <a class="" href="#">
+              <img src="./assets/img/logo.png" class="logo mb-4" alt="BookSaw Logo">
+            </a>            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi possimus, eligendi perspiciatis blanditiis tempora illo autem similique eum consectetur commodi debitis sint? Pariatur at corporis illum temporibus laborum nulla?</p>
+          </div>
+          
+          <!-- ---------------------------- Useful Links ----------------------------- -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-5 footer-sections">About Us</h5>
+            <p><a href="#" class="footer-links">Vision</a></p>
+            <p><a href="#" class="footer-links">Articles</a></p>
+            <p><a href="#" class="footer-links">Careers</a></p>
+            <p><a href="#" class="footer-links">Service Terms</a></p>
+            <p><a href="#" class="footer-links">Donate</a></p>
+          </div>
+    
+          <!-- ---------------------------- Useful Links ----------------------------- -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-5 footer-sections">Discover</h5>
+            <p><a href="#" class="footer-links">Home</a></p>
+            <p><a href="#" class="footer-links">Books</a></p>
+            <p><a href="#" class="footer-links">Authors</a></p>
+            <p><a href="#" class="footer-links">Subjects</a></p>
+            <p><a href="#" class="footer-links">Advanced Search</a></p>
+          </div>
+    
+          <!-- ---------------------------- Useful Links ----------------------------- -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-5 footer-sections">My Account</h5>
+            <p><a href="#" class="footer-links">Sign In</a></p>
+            <p><a href="#" class="footer-links">View Cart</a></p>
+            <p><a href="#" class="footer-links">My Wishlist</a></p>
+            <p><a href="#" class="footer-links">Track My Order</a></p>
+          </div>
+    
+          <!-- ---------------------------- Useful Links ----------------------------- -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="mb-5 footer-sections">Help</h5>
+            <p><a href="#" class="footer-links">Help Center</a></p>
+            <p><a href="#" class="footer-links">Report a Problem</a></p>
+            <p><a href="#" class="footer-links">Suggesting Edits</a></p>
+            <p><a href="#" class="footer-links">Contact Us</a></p>
+          </div>
+        </div>
+    
+        <hr class="mb-4">
+
+        <!-- ---------------------- Copywrite ----------------------- -->
+        <div class="row align-items-center mt-5">
+          <div class="col-md-7 col-lg-8">
+            <p style="color: #555;">© 2022 All rights reserved. Free HTML Template by <span class="copywrite"> TemplatesJungle</span></p>
+          </div>
+          
+          <!-- ---------------------------- Social Links ----------------------------- -->
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline d-flex">
+                <li><a class="social-links" href="https://facebook.com" target="_blank" rel="noopener"><i class="m-3 fa-brands fa-facebook"></i></a></li>
+                <li><a class="social-links" href="https://twitter.com" target="_blank" rel="noopener"><i class="m-3 fa-brands fa-twitter"></i></a></li>
+                <li><a class="social-links" href="https://youtube.com" target="_blank" rel="noopener"><i class="m-3 fa-brands fa-youtube"></i></a></li>
+                <li><a class="social-links" href="https://behance.com" target="_blank" rel="noopener"><i class="m-3 fa-brands fa-behance"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --------------------------- End Footer Section ---------------------------- -->
+
+  </body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/scripts.js"></script>
+  </body>
+</html>

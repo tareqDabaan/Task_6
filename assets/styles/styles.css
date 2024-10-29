@@ -1,0 +1,336 @@
+:root {
+  --primary-color: #c8ad97;
+  --secondary-color: #d4aa5f;
+  --text-color: #666;
+  --light-bg-color: #f3f2ec;
+  --accent-bg-color: #edebe4;
+  --border-color: #d6d6d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "prataRoboto", sans-serif;
+}
+
+header {
+  background-color: var(--light-bg-color);
+}
+
+.logo {
+  width: 180px;
+}
+
+nav {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-toggler.custom-toggler {
+  display: flex;
+  border: none;
+  padding: 0;
+  align-items: center;
+}
+
+.menu-text {
+  margin-left: 8px;
+  color: var(--text-color);
+  font-size: 23px;
+}
+
+a.custom-active,
+.nav-link.custom-color:hover {
+  color: var(--primary-color);
+}
+
+.carousel-content {
+  width: 300px;
+}
+
+.readmore-btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 0;
+}
+
+.readmore-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.prev-next {
+  font-size: 18px;
+  color: #5a5959;
+}
+
+.our-clients,
+.best-selling,
+.subscribe {
+  background-color: var(--accent-bg-color);
+  padding: 5%;
+}
+
+.title {
+  font-family: "prataPrata";
+}
+
+.featured-books {
+  background-color: var(--light-bg-color);
+}
+
+.featured-books p {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #c0baba;
+}
+
+.book-card {
+  background-color: var(--light-bg-color);
+  position: relative;
+  border: 2px solid #e7e7e7;
+}
+
+.add-to-cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.add-to-cart-container h5 {
+  color: #fff;
+  margin: 0;
+  font-family: "parta";
+  font-weight: 500;
+}
+
+.book-card:hover .add-to-cart-container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.book-title {
+  font-size: 1.3rem;
+  color: #925f22;
+  margin-top: 8px;
+}
+
+.featured-books a.text-dark:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.view-products-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.view-products {
+  color: #333;
+  font-weight: bold;
+}
+
+.view-products:hover {
+  color: #555;
+}
+
+.best-selling-title,
+.footer-sections {
+  font-family: "prata";
+  font-size: 26px;
+  margin-bottom: 28px;
+}
+
+.book-cover {
+  background-color: #f7f6f1;
+  border: 1px solid #e7e7e7;
+}
+
+.book-cover img {
+  width: 300px;
+  height: 400px;
+}
+
+.book-details h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.book-details p.author,
+.book-details p.description {
+  font-size: 16px;
+  color: #555;
+}
+
+.book-details h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shop-btn-container {
+  margin-top: 40px;
+}
+
+.shop-now {
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  text-decoration: none;
+}
+
+.shop-now::after {
+  content: "→";
+  padding-left: 5px;
+}
+
+.underline {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin: 10px 0 20px;
+}
+
+.popular-books {
+  background-color: var(--light-bg-color);
+}
+
+.popular-books p {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #c0baba;
+}
+
+.category-link {
+  color: #98989a;
+}
+
+.category-link:hover {
+  color: black;
+  border-bottom: 3px solid #925f22;
+}
+
+.subscribe-title {
+  font-family: "prata";
+  font-size: 2.5rem;
+}
+
+.subscribe-details p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.custom-input {
+  border: none;
+  background-color: inherit;
+  color: #000;
+  width: 100%;
+  outline: none;
+}
+
+
+.custom-input:focus {
+  border: none;
+  outline: none;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: #676666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.underline-form {
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: #676666;
+}
+
+.send-btn {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .best-seller-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-title {
+    font-size: 2rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+    flex-direction: column;
+  }
+
+  .send-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .subscribe-title {
+    font-size: 1.75rem;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .underline-form {
+    margin-top: 5px;
+  }
+}
+
+footer {
+  background-color: var(--light-bg-color);
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-links:hover {
+  color: #5a5959;
+}
+
+.copywrite {
+  color: var(--secondary-color);
+}
+
+.social-links {
+  color: inherit;
+}
