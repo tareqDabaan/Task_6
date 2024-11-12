@@ -18,6 +18,8 @@ jobs:
     
     - name: Deploy to Render
       run: |
+        echo "Deploying static files..."
+        curl -fsSL https://render.com/deploy.sh | bash
 
     - name: Clean up
       run: |
