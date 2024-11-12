@@ -1,0 +1,25 @@
+name: Static Site CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    setps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Deploy to Render
+      run: |
+
+    - name: Clean up
+      run: |
+        echo "CI/CD pipline completed."
+        
